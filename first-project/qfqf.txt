@@ -1,0 +1,35 @@
+
+   const handleEditValue = ()=>{
+    setValue((prevValue)=>{
+     return prevValue = document.getElementById('inp').value;
+    })
+  }
+
+
+
+     const handleDeleteDiv = ()=>{
+
+    setArray((prevArray)=>{
+      prevArray.pop()
+      console.log(prevArray)
+      return prevArray
+    })
+ 
+  }
+
+  setArray((prevArray)=>{
+       for(let i = value; i > 0; i--){
+        prevArray = [...prevArray, prevArray.length]
+       }
+       return prevArray
+     })
+
+
+      const handleAddDiv = ()=>{
+     setArray((prevArray)=>{
+       for(let i = value; i > 0; i--){
+        prevArray = [...prevArray, prevArray.length]
+       }
+       return prevArray
+     })
+    }
